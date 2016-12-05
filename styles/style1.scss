@@ -1,0 +1,31 @@
+// nav bar css
+.navbar {
+    border-radius: 0px;
+}
+.navbar-header{
+  .navbar-brand{
+    padding: 0;
+    img{
+      width: 40px;
+    }
+  }
+}
+.loginmodal-container {
+  padding: 30px;
+  background-color: #F7F7F7;
+  border-radius: 2px;
+  font-family: roboto;
+  box-shadow: 0 0 2px;
+  margin-top: 50px;
+  h1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: roboto;
+  }
+  .login-help{
+  margin-top:20px;
+  a{
+    font-size: 14px;
+  }
+  }
+}

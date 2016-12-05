@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gulp Angular - Seed Project</title>
+    <!-- bower:css -->
+    <!-- bower installed css files will go here... -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <!-- endinject -->
+</head>
+
+<body ng-app="gulpApp">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href=""><img src="images/gulp.png" class="img-responsive" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav pull-right">
+                    <li ng-class="{ active: $state.includes('login') }"><a ui-sref="login"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                    <li ng-class="{ active: $state.includes('signup') }"><a ui-sref="signup"><span class="glyphicon glyphicon-log-in"></span> Signup</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+    <!-- bower:js -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="js/vendor.min.js"></script>
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <script src="modules/login/loginCtrl.js"></script>
+    <script src="modules/signup/signupCtrl.js"></script>
+    <!-- endinject -->
+</body>
+</html>
