@@ -16,4 +16,4 @@ To run the sample, open a command prompt and execute the following commands:
  ## Reference 
  - Karma runs on Node.js and is available as an NPM package. Setup steps can be found [here](http://karma-runner.github.io/0.12/intro/installation.html)
  - The current tests are constructed using the [Jasmine framework](http://jasmine.github.io/).
-JK adding new text to check fot Git commit
+-
