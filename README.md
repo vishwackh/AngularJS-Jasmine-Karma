@@ -48,7 +48,10 @@ Jasmine is a behavior-driven development framework for testing JavaScript code. 
 
 ## quick intruduction to the Jasmine framwork Jasmine
 
- ## Reference
+## 
+## Reference
  - Karma runs on Node.js and is available as an NPM package. Setup steps can be found [here](http://karma-runner.github.io/0.12/intro/installation.html)
- - The current tests are constructed using the [Jasmine framework](http://jasmine.github.io/).
--
+- The current tests are constructed using the [Jasmine framework](http://jasmine.github.io/).
+
+
+
