@@ -28,7 +28,7 @@ Test Driven Developemnt :
 Test Driven Developemnt a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.
 
 <p align="center">
-  <a href="http://gulpjs.com">
+  <a href="">
     <img  src="https://github.com/vishwackh/AngularJS-Jasmine-Karma/blob/master/app/images/angularjs-unit-testing-introduction-7-638.jpg">
   </a>
 </p>  
