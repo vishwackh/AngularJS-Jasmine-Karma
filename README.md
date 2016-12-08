@@ -49,7 +49,7 @@ Jasmine is an open source behavior-driven development framework for testing Java
 
 - Jasmine provides functions to help with structuring your tests and also making assertions.
 
-<a href="https://github.com/vishwackh/AngularJS-Jasmine-Karma/wiki/Jasmine">more detail...</a>
+<a href="https://github.com/vishwackh/AngularJS-Jasmine-Karma/wiki/About-Jasmine">more detail...</a>
 
 <a href="http://jasmine.github.io" >http://jasmine.github.io</a>
 
