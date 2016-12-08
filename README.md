@@ -2,7 +2,7 @@
   <a href="http://gulpjs.com">
     <img  src="https://github.com/vishwackh/AngularJS-Jasmine-Karma/blob/master/app/images/karmajasmin.jpg">
   </a>
-  <p align="center">AngularJS-Jasmine-Karma</p>
+  <p align="center">**AngularJS-Jasmine-Karma**</p>
 </p>
 
 ## Quick Start?
@@ -27,9 +27,17 @@ AngularJS build around the concept of dependency injection & loose coupling to t
 Test Driven Developemnt :
 Test Driven Developemnt a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.
 
-<image>
+<p align="center">
+  <a href="http://gulpjs.com">
+    <img  src="https://github.com/vishwackh/AngularJS-Jasmine-Karma/blob/master/app/images/angularjs-unit-testing-introduction-7-638.jpg">
+  </a>
+</p>  
+## AngularJS
+AngularJS is one of the most popular single-page application frameworks. 
 
 ## Why Karma?
+ 
+Karma is a javascript command line tool that can be used to spawn a web server which loads your application.
 
 The main goal for Karma is to bring a productive testing environment to developers. The environment being one where they don't have to set up loads of configurations, but rather a place where developers can just write the code and get instant feedback from their tests. Because getting quick feedback is what makes you productive and creative.
 
@@ -37,9 +45,19 @@ The main goal for Karma is to bring a productive testing environment to develope
 
 ## Why Jasmine?
 
-Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests.
+Jasmine is an open source behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests.
+
+- Jasmine provides functions to help with structuring your tests and also making assertions.
+
+<a href="https://github.com/vishwackh/AngularJS-Jasmine-Karma/wiki/Jasmine">more detail...</a>
 
 <a href="http://jasmine.github.io" >http://jasmine.github.io</a>
+
+## Why ANGULAR MOCKS?
+
+ANGULAR MOCKS Allows you to inject and mock Angular services for unit tests.
+
+<a href="https://docs.angularjs.org/guide/unit-testing" >guide/unit-testing</a>
 
 ## Project Setup:
 -- Setting up our TDD Enveirment Project Setup --
@@ -169,7 +187,7 @@ When the number of test suites and specs grows larger, the overall test speed is
 webstorm users can install the <a href="http://plugins.jetbrains.com/plugin/7233?pr=idea">ddescriber for jasmine</a>
 
 ## Reference
- - Karma runs on Node.js and is available as an NPM package. Setup steps can be found [here](http://karma-runner.github.io/0.12/intro/installation.html)
+- Karma runs on Node.js and is available as an NPM package. Setup steps can be found [here](http://karma-runner.github.io/0.12/intro/installation.html)
 - The current tests are constructed using the [Jasmine framework](http://jasmine.github.io/).
 
 
