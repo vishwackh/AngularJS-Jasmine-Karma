@@ -1,4 +1,9 @@
-# AngularJS-Jasmine-Karma
+<p align="center">
+  <a href="http://gulpjs.com">
+    <img  src="https://github.com/vishwackh/AngularJS-Jasmine-Karma/blob/master/app/images/karmajasmin.jpg">
+  </a>
+  <p align="center">AngularJS-Jasmine-Karma</p>
+</p>
 
 ## Quick Start?
 ```js
