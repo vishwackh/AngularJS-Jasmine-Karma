@@ -48,7 +48,121 @@ Jasmine is a behavior-driven development framework for testing JavaScript code. 
 
 ## quick intruduction to the Jasmine framwork Jasmine
 
-## 
+in jasmine, we begin by creating a test suite with the global **describe** function that wrap our specs. specs are defined by the global function **it**. inside the spec we can describe our expextations by using tha **expect** function chained to a matcher function
+
+```js
+describe("suite name", function() { 
+
+	it("contains spec with an expectation", function() { 
+	expect(true).toBe(true); 
+	}); 
+
+});
+```
+we can run code before and after each spec in a suite block using the beforeEach and afterEach functions
+
+```js 
+describe("suite name", function() { 
+
+  beforeEach(function () {//excute before each spec}) 
+
+  it("contains spec with an expectation", function() {
+  expect(true).toBe(true); 
+  }); 
+ 
+ afterEach(function () {//excute after each spec}) }); 
+``` 
+ jasmine use spies to track calls to a function with all it`s arguments. There are special matchers for interacting with spies. The toHaveBeenCalled and The toHaveBeenCalledWith
+ 
+ ```js
+ // spy on the method setBar of foo object 
+ 
+ spyOn(foo, 'setBar'); 
+ 
+	 it("contains spec with an expectation", function() { 
+		 expect(foo.setBar).toHaveBeenCalled(); 
+		 expect(foo.setBar).toHaveBeenCalledWith(32); 
+	 }); 
+ }); 
+``` 
+## Testing AngularJS 
+### Test Driven Development in practice 
+
+We are going to develop a small app. in the process we will learn how to unit test the building blocks of every AngularJS application: controllers, services, directives, events & http requests. First, let`s get some resources using bower
+
+```js
+$ bower install angular 
+$ bower install angular-mocks 
+```
+## Controller 
+In order to test controllers we need to holds an instance of the controller, initialize a scope for it and testing our expectations against that scope.
+```js
+ // get the module that contain the controller 
+ beforeEach(module('appmodule')); 
+ // inject the $controller and the rootScope 
+ beforeEach(inject(function ($rootScope, $controller) { 
+ // create a fresh new scope for the controller 
+ scope = $rootScope.$new(); 
+ // create a controller with this scope 
+ ctrl = $controller('appController',{$scope: scope}); 
+ })); 
+```
+## Services
+In order to test services we need to use the $injector to get an instance of the service
+```js
+// get the module that contain the service 
+beforeEach(module('appmodule')); 
+// inject the $injector 
+beforeEach(inject(function ($injector) { 
+// use the $injector to get a hold on the service 
+service = $injector.get(‘ServiceName’); 
+})); 
+```
+##  Directive
+In order to test a directive, we need to create an element that will host the directive and compile it with a scope. in our spec, we need trigger the digest.
+```js
+// get the module that contain the service 
+beforeEach(module('appmodule')); 
+// inject the $compile service and the $rootScope 
+beforeEach(inject(function ($compile, $rootScope) { 
+// use the $rootScope to create a scope for the directive 
+scope = $rootScope; 
+// create an angular element from a HTML string 
+element = angular.element(‘<div my-directive ></div>’) 
+// compile the element with the scope 
+$compile(element)(scope) 
+scope.$apply() 
+})); 
+```
+## http requests
+the $httpBackend is a fake HTTP Back-end implementaion. in the most basic use we can verify that a request is made & stub responses
+```js
+// inject the $httpBackend service and the $rootScope 
+beforeEach(inject(function ($httpBackend) { 
+	// use the $rootScope to create a scope for the directive 
+	httpBackend = $httpBackend; 
+	it("somting that make a request", function() { 
+	// expect a request 
+	httpBackend.expectGET(‘api’).respond(200); 
+	// code that make a request 
+	httpBackend.flush(); // do`nt forget to flush.. 
+	}); 
+})); 
+```
+## Productive Tips 
+-- Making testing even more easier --
+
+When the number of test suites and specs grows larger, the overall test speed is affected. jasmine include some usfull syntax to control it. 
+```js
+	// run this usite 
+	ddescribe() 
+	// run this spec 
+	iit() 
+	// run this spec 
+	xit() 
+```	
+webstorm users can install the <a href="http://plugins.jetbrains.com/plugin/7233?pr=idea">ddescriber for jasmine</a>
+
 ## Reference
  - Karma runs on Node.js and is available as an NPM package. Setup steps can be found [here](http://karma-runner.github.io/0.12/intro/installation.html)
 - The current tests are constructed using the [Jasmine framework](http://jasmine.github.io/).
