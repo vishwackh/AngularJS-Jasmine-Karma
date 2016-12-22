@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://gulpjs.com">
-    <img  src="https://github.com/vishwackh/AngularJS-Jasmine-Karma/blob/master/app/images/karmajasmin.jpg">
+    <img  src="https://www.agvision.ro/wp-content/uploads/2016/04/angular-2-testing-750x247.jpg">
   </a>
   <p align="center">**AngularJS-Jasmine-Karma**</p>
 </p>
