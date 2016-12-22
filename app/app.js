@@ -1,4 +1,9 @@
-'use strict';
+(function() {
+    'use strict';
 
-// app.js
-var app = angular.module('gulpApp', ['ui.router']);
+    angular
+        .module('appmodule', [
+            'ui.router',
+            'ngCookies'
+        ]);
+})();

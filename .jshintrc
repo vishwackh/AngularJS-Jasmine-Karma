@@ -56,6 +56,16 @@
   "globals": {
       "angular": false,
       "$": false,
-      "app":false
+      "app":false,
+      "jasmine":false,
+      "describe": false,
+      "it": false,
+      "expect": false,
+      "beforeEach": false,
+      "afterEach": false,
+      "module": false,
+      "inject": false,
+      "spyOn":false,
+      "$httpBackend":false      
   }
 }
