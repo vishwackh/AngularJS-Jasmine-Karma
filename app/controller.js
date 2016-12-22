@@ -5,10 +5,11 @@
         .module('appmodule')
         .controller('Controller', Controller);
 
-    Controller.$inject = ['dependencies'];
+    Controller.$inject = ['$scope'];
 
     /* @ngInject */
-    function Controller(dependencies) {
+    function Controller($scope) {
         var vm = this;
+        $scope.title = 'Hello World';
     }
 })();
