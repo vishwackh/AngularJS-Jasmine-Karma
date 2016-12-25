@@ -1,9 +1,6 @@
-(function() {
-    'use strict';
-
-    angular
-        .module('appmodule', [
-            'ui.router',
-            'ngCookies'
-        ]);
-})();
+'use strict';
+var app = angular
+    .module('appmodule', [
+        'ui.router',
+        'ngCookies'
+    ]);

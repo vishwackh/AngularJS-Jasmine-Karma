@@ -1,9 +1,7 @@
 (function() {
     'use strict';
 
-    angular
-        .module('appmodule')
-        .controller('Controller', Controller);
+    app.controller('Controller', Controller);
 
     Controller.$inject = ['$scope'];
 
