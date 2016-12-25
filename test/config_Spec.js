@@ -39,7 +39,7 @@ describe('\nApp UI Routing', function() {
         describe('\nchecking the secondPage state', function() {
             it('should have the correct secondPage route URL', function() {
                 state = $state.get('secondPage');
-                expect(state.url).toEqual('/secondPage');
+                expect(state.url).toEqual('/secondPage/:loginId');
             });
 
             it('should have the correct secondPage route template', function() {
